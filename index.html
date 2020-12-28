@@ -3,13 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <meta name="author" content="Hayden Rieder">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
-
 <body>
-<h2>
-    HI
-</h2>
+
+<!--    SCRIPTS    -->
+
+<script src="typed.js"></script>
+
+<!--    NAV    -->
+
+<nav class="nav container void-background">
+    <div class="nav-left">
+        <a href="https://www.linkedin.com/in/hrieder" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-linkedin"></i>
+					</span>
+        </a>
+        <a href="https://github.com/Hayden50" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+        </a>
+        <a href="mailto:haydenrieder50@hotmail.com" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-envelope"></i>
+					</span>
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <a class="nav-item" href="#intro">-INSERT N1-</a>
+    </div>
+
+    <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+
+</nav>
+
+<!--    WORDS    -->
+
+<section id="intro" class="main">
+
+    <h1 class="title">
+        <span class="titleType"></span>
+    </h1>
+
+    <script>
+        let typed = new Typed('.titleType', {
+            strings: ['Hayden Rieder'],
+            typeSpeed: 50,
+            startDelay: 400,
+            loop: false,
+            cursorChar: '_',
+        });
+    </script>
+
+</section>
 
 </body>
 
