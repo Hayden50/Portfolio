@@ -18,15 +18,40 @@
 
 <!--    SCRIPTS    -->
 
-
+<script src="js/script.js"></script>
+<script src="js/typed.js"></script>
 
 <!--    MAIN SECTIONS    -->
 
 <main id="main">
 
+    <section id="section-0" class="grid">
+
+        <div class="container">
+            <p class="title"><span class="name"></span></p>
+<!--            <p class="title2"><span class="name2"></span></p>-->
+            <script>
+                var typed = new Typed('.name', {
+                    strings: ['Hello\n'],
+                    typeSpeed: 40,
+                    startDelay: 100,
+                    loop: false,
+                    cursorChar: '_'
+                });
+                // var typed = new Typed('.name2', {
+                //     strings: ['My name is Hayden'],
+                //     typeSpeed: 40,
+                //     startDelay: 700,
+                //     loop: false,
+                //     cursorChar: '_'
+                // });
+            </script>
+        </div>
+
+    </section>
+
     <section id="section-a" class="grid">
 
-        <h1 class="title">HAYDEN<br>RIEDER.</h1>
         <hr style="width:30%; text-align: left; margin-left: 1em; background-color: #666600">
         <div class="link-bar">
                 <a href="https://www.linkedin.com/in/hrieder" class="links">

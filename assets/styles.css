@@ -1,11 +1,45 @@
 /*-------- CORE STYLES --------*/
 
 body {
+    font-family: 'Alatsi', sans-serif;
     margin: 0;
-    background: #404040;
-    color: white;
+    background: black;
     line-height: 1.5;
     text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/*-------- SECTION 0 --------*/
+
+#section-0 {
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    font-size: 8vw;
+    color: white;
+}
+
+canvas {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    position: center;
 }
 
 /*-------- SECTION A --------*/
@@ -13,6 +47,10 @@ body {
 #section-a {
     background-color: #404040;
     height: 100vh;
+}
+
+#section-a .link-bar.links {
+    background-color: white;
 }
 
 .focus img {
@@ -23,15 +61,6 @@ body {
     padding-left: 25vw;
     padding-bottom: 25vh;
     height: auto;
-}
-
-.title {
-    color: Gainsboro;
-    font-weight: bold;
-    font-size: xx-large;
-    text-align: left;
-    padding-top: 1em;
-    padding-left: .5em;
 }
 
 /*-------- SECTION B --------*/
