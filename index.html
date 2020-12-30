@@ -23,6 +23,7 @@
 <script src="js/typed.js"></script>
 <script type="text/javascript" src=js/jquery-1.11.1.min.js></script>
 <script type="text/javascript" src="js/jquery.particleground.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 <!--    MAIN SECTIONS    -->
 
@@ -35,8 +36,8 @@
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 particleground(document.getElementById('particles'), {
-                    dotColor: '#ffffff',
-                    lineColor: '#ffffff'
+                    dotColor: '#A8A8A8',
+                    lineColor: '#A8A8A8'
                 });
                 var intro = document.getElementById('intro');
                 intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
@@ -44,8 +45,8 @@
         </script>
         <script>
             let typed = new Typed('.name', {
-                strings: ['Hello!', 'My name is Hayden Rieder.'],
-                typeSpeed: 60,
+                strings: ['Hello!', 'My name is<br><span style="color: #00FFFF">Hayden Rieder.</span>'],
+                typeSpeed: 50,
                 backDelay: 30,
                 backSpeed: 60,
                 startDelay: 150,
@@ -57,47 +58,52 @@
 
     <section id="section-a" class="grid">
 
-        <hr style="width:30%; text-align: left; margin-left: 1em; background-color: #666600">
+        <h2 class="section-a-title">ABOUT ME</h2>
+
+        <div class="focuses">
+            <div>
+                <span class="focus-icon">
+                    <i class="fa fa-sitemap fa-7x"><p class="caption">SysArc</p></i>
+                </span>
+            </div>
+            <div>
+                <span class="focus-icon">
+                    <i class="fas fa-brain fa-7x"><p class="caption">AI</p></i>
+                </span>
+            </div>
+        </div>
+
+        <img src="assets/images/Hayden-Edit.jpg" alt="">
+
         <div class="link-bar">
-                <a href="https://www.linkedin.com/in/hrieder" class="links">
+            <a href="https://www.linkedin.com/in/hrieder" class="links">
                             <span class="icon">
-                                <i class="fa fa-linkedin"></i>
+                                <i class="fab fa-linkedin"></i>
                             </span>
-                </a>
-                <a href="https://github.com/Hayden50" class="links">
+            </a>
+            <a href="https://github.com/Hayden50" class="links">
                             <span class="icon">
-                                <i class="fa fa-github"></i>
+                                <i class="fab fa-github"></i>
                             </span>
-                </a>
-                <a href="mailto:haydenrieder50@hotmail.com" class="links">
+            </a>
+            <a href="mailto:haydenrieder50@hotmail.com" class="links">
                             <span class="icon">
                                 <i class="fa fa-envelope"></i>
                             </span>
-                </a>
-        </div>
-        <div class="focus">
-            <img src="assets/images/Hayden-Edit.jpg" alt="">
-            <h1 class="focus-title">AREAS OF FOCUS</h1>
-            <h1 class="focus-body">- Artificial Intelligence<br>- Systems & Architecture</h1>
+            </a>
         </div>
 
     </section>
 
     <section id="section-b" class="grid">
 
-        <h1 class="skills-title">SKILLS</h1>
-
-    </section>
-
-    <section id="section-c" class="grid">
-
-        <h1 class="projects-title">PROJECTS</h1>
+        <h2 class="section-b-title">PROJECTS</h2>
         <ul>
             <li>
                 <div class="project-card">
                     <img src="" alt="">
                     <div class="project-contents">
-                        <h2 class="project-title">Personal Portfolio</h2>
+                        <h3 class="project-title">Personal Portfolio</h3>
                         <p>blah blah blah</p>
                     </div>
                 </div>
@@ -106,7 +112,7 @@
                 <div class="project-card">
                     <img src="https://www.pexels.com/photo/blue-and-yellow-graph-on-stock-market-monitor-159888/" alt="">
                     <div class="project-contents">
-                        <h2 class="project-title">Stocks</h2>
+                        <h3 class="project-title">Stocks</h3>
                         <p>blah blah blah</p>
                     </div>
                 </div>
