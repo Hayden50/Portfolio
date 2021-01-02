@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
@@ -32,6 +34,9 @@
     <div id="particles">
         <div id="intro">
             <h1><span class="name"></span></h1>
+            <h5 class="animated animatedFadeInUp fadeInUp">
+                Student and Full-Stack Software Developer
+            </h5>
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -45,10 +50,8 @@
         </script>
         <script>
             let typed = new Typed('.name', {
-                strings: ['Hello!', 'My name is<br><span style="color: #00FFFF">Hayden Rieder.</span>'],
-                typeSpeed: 50,
-                backDelay: 30,
-                backSpeed: 60,
+                strings: ['<span style="color: #B3A369">Hayden Rieder</span>'],
+                typeSpeed: 65,
                 startDelay: 150,
                 loop: false,
                 cursorChar: '_'
@@ -60,38 +63,52 @@
 
         <h2 class="section-a-title">ABOUT ME</h2>
 
-        <div class="focuses">
-            <div>
-                <span class="focus-icon">
-                    <i class="fa fa-sitemap fa-7x"><p class="caption">SysArc</p></i>
-                </span>
-            </div>
-            <div>
-                <span class="focus-icon">
-                    <i class="fas fa-brain fa-7x"><p class="caption">AI</p></i>
-                </span>
+        <div class="scrolling-wrapper">
+            <div class="d-flex flex-row flex-nowrap">
+                <div class="card card-body">
+                    <span class="focus-icon">
+                        <i class="fas fa-university fa-5x"></i>
+                    </span>
+                    <h3 class="card-caption">Georgia Institute of Technology</h3>
+                </div>
+                <div class="card card-body">
+                    <span class="focus-icon">
+                        <i class="fas fa-home fa-5x"></i>
+                    </span>
+                    <h3 class="card-caption">From Atlanta, Georgia</h3>
+                </div>
+                <div class="card card-body">
+                    <span class="focus-icon">
+                        <i class="fas fa-pencil-alt fa-5x"></i>
+                    </span>
+                    <h3 class="card-caption">Object-Oriented Programming<br>Data Structures & Algos</h3>
+                </div>
+                <div class="card card-body">
+                    <span class="focus-icon">
+                        <i class="fas fa-phone fa-5x"></i>
+                    </span>
+                    <div class="link-wrapper">
+                        <a href="https://www.linkedin.com/in/hrieder" class="links">
+                                <span class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                        </a>
+                        <a href="https://github.com/Hayden50" class="links">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                        </a>
+                        <a href="mailto:haydenrieder50@hotmail.com" class="links">
+                                <span class="icon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <img src="assets/images/Hayden-Edit.jpg" alt="">
-
-        <div class="link-bar">
-            <a href="https://www.linkedin.com/in/hrieder" class="links">
-                            <span class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </span>
-            </a>
-            <a href="https://github.com/Hayden50" class="links">
-                            <span class="icon">
-                                <i class="fab fa-github"></i>
-                            </span>
-            </a>
-            <a href="mailto:haydenrieder50@hotmail.com" class="links">
-                            <span class="icon">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-            </a>
-        </div>
+        <img class="picture" src="assets/images/Hayden-Edit.jpg" alt="">
 
     </section>
 

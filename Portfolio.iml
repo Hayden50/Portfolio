@@ -17,5 +17,6 @@
     <orderEntry type="library" name="jquery-1.11.1" level="application" />
     <orderEntry type="library" name="particleground" level="project" />
     <orderEntry type="library" name="a076d05399" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

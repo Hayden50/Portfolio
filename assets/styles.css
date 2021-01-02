@@ -4,6 +4,7 @@ body {
     width: 100%;
     height: 100%;
     background: #484848;
+    /*background: white;*/
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     line-height: 1.3;
@@ -22,18 +23,35 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-size: 85px;
+    font-size: 100px;
     font-weight: 700;
     letter-spacing: 0.015em;
 }
 
 h2 {
     text-align: center;
-    color: white;
+    color: #B3A369;
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     font-weight: bold;
     font-size: 68px;
+}
+
+h5 {
+    font-size: 28px;
+    padding-top: 1em;
+    animation: ease-in;
+    /*color: black;*/
+}
+
+.hideme {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
 }
 
 /*-------- SECTION 0 --------*/
@@ -61,22 +79,28 @@ h2 {
 
 @media only screen and (max-width: 1000px) {
     h1 {
-        font-size: 70px;
+        font-size: 75px;
     }
     h2 {
         font-size: 56px;
+    }
+    h5 {
+        font-size: 24px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     h1 {
-        font-size: 48px;
+        font-size: 53px;
     }
     h1::after {
         height: 8px;
     }
     h2 {
         font-size: 38px;
+    }
+    h5 {
+        font-size: 18px;
     }
 }
 
@@ -85,7 +109,7 @@ h2 {
         padding: 0 10px;
     }
     h1 {
-        font-size: 30px;
+        font-size: 45px;
     }
     h1::after {
         height: 6px;
@@ -96,6 +120,9 @@ h2 {
     h2 {
         font-size: 24px;
     }
+    h5 {
+        font-size: 15px;
+    }
     .btn {
         font-size: 16px;
     }
@@ -103,7 +130,7 @@ h2 {
 
 @media only screen and (max-width: 320px) {
     h1 {
-        font-size: 28px;
+        font-size: 33px;
     }
     h1::after {
         height: 4px;
@@ -116,8 +143,8 @@ h2 {
 /*-------- SECTION A --------*/
 
 #section-a {
-    background-color: #A8A8A8;
-    height: 100vh;
+    background-color: white;
+    height: 150vh;
 }
 
 .focuses {
@@ -126,7 +153,8 @@ h2 {
 }
 
 .focus-icon {
-    color: #00FFFF;
+    color: #B3A369;
+    text-align: center;
 }
 
 .caption {
@@ -137,8 +165,46 @@ h2 {
     color: #ffffff;
 }
 
+.card-body {
+    min-height: 450px;
+    min-width: 300px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.card {
+    background-color: #484848;
+    border-style: double;
+    border-color: #B3A369;
+    border-width: 1em;
+}
+
+.card-caption {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+}
+
+.link-wrapper {
+    text-align: center;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
 .links {
-    color: #00FFFF;
+    color: #B3A369;
+}
+
+.picture {
+    max-height: 300px;
+    padding: 1em;
+    float: right;
 }
 
 /*-------- SECTION B --------*/
@@ -149,6 +215,67 @@ h2 {
 }
 
 /*-------- NOT IN USE --------*/
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.animatable {
+
+    visibility: hidden;
+
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.animated {
+    visibility: visible;
+
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
 
 /*@keyframes bounce {*/
 /*    0%,*/
