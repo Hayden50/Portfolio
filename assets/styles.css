@@ -23,7 +23,7 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 97px;
     font-weight: 700;
     letter-spacing: 0.015em;
 }
@@ -77,7 +77,7 @@ h5 {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 990px) {
     h1 {
         font-size: 75px;
     }
@@ -87,9 +87,13 @@ h5 {
     h5 {
         font-size: 24px;
     }
+    #section-a {
+        height: 250vh;
+        background-color: white;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 53px;
     }
@@ -101,6 +105,10 @@ h5 {
     }
     h5 {
         font-size: 18px;
+    }
+    #section-a {
+        height: 250vh;
+        background-color: white;
     }
 }
 
@@ -126,6 +134,10 @@ h5 {
     .btn {
         font-size: 16px;
     }
+    #section-a {
+        height: 250vh;
+        background-color: white;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -138,68 +150,103 @@ h5 {
     h2 {
         font-size: 22px;
     }
+    #section-a {
+        height: 250vh;
+        background-color: white;
+    }
 }
 
 /*-------- SECTION A --------*/
 
-#section-a {
-    background-color: white;
-    height: 150vh;
+@media only screen and (min-width: 991px) {
+    #section-a {
+        background-color: white;
+        height: 150vh;
+    }
 }
 
-.focuses {
-    padding-left: 3em;
-    padding-bottom: 3em;
+.card {
+    padding-top: 1em;
+    min-height: 500px;
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #484848;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.circle-icon {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 50%;
+    margin-top: -250px;
+    box-shadow: 5px 5px 15px #484848;
 }
 
 .focus-icon {
     color: #B3A369;
+}
+
+.card-title {
     text-align: center;
-}
-
-.caption {
-    font-size: small;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    text-align: center;
-    color: #ffffff;
-}
-
-.card-body {
-    min-height: 450px;
-    min-width: 300px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.card {
-    background-color: #484848;
-    border-style: double;
-    border-color: #B3A369;
-    border-width: 1em;
-}
-
-.card-caption {
-    text-align: center;
-    color: white;
+    color: black;
+    font-size: x-large;
     padding-top: 1em;
 }
 
-.link-wrapper {
-    text-align: center;
+.card-caption {
+    text-align: left;
+    color: black;
+    padding-top: 1em;
+    font-size: large;
 }
 
-.scrolling-wrapper {
-    overflow-x: scroll;
+.card:hover {
+    background: #484848;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #B3A369;
 }
 
-.scrolling-wrapper::-webkit-scrollbar {
-    width: 0;
+.card:hover .circle-icon {
+    background: #B3A369;
+    border-radius: 50%;
+    margin-top: -250px;
+    box-shadow: 5px 5px 15px #B3A369;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
 }
 
-.links {
+.card:hover .focus-icon {
+    color: #484848;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+.card:hover .card-title {
     color: #B3A369;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
 }
+
+.card:hover .card-caption {
+    color: white;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+
+/*.link-wrapper {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.links {*/
+/*    color: #B3A369;*/
+/*}*/
 
 .picture {
     max-height: 300px;
