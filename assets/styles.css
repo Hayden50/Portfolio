@@ -94,6 +94,9 @@ h5 {
         height: 250vh;
         background-color: white;
     }
+    #section-b {
+        height: 150vh;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -112,6 +115,9 @@ h5 {
     #section-a {
         height: 250vh;
         background-color: white;
+    }
+    #section-b {
+        height: 150vh;
     }
 }
 
@@ -141,6 +147,9 @@ h5 {
         height: 250vh;
         background-color: white;
     }
+    #section-b {
+        height: 150vh;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -156,6 +165,9 @@ h5 {
     #section-a {
         height: 250vh;
         background-color: white;
+    }
+    #section-b {
+        height: 150vh;
     }
 }
 
@@ -243,11 +255,11 @@ h5 {
     -moz-transition: all 0.3s ease-in;
 }
 
-.thread {
+.hyper-link {
     color: #B3A369;
 }
 
-.thread:hover {
+.hyper-link:hover {
     text-decoration: none;
     color: #B3A369;
 }
@@ -331,10 +343,10 @@ h5 {
     right: 10%;
 }
 
-.bar.pct-75 .inner {
+.bar.pct-60 .inner {
     -webkit-animation-duration: 3s;
     -webkit-animation-name: grow-75;
-    right: 25%;
+    right: 40%;
 }
 
 .bar.pct-50 .inner {
@@ -357,15 +369,64 @@ h5 {
 .v-divider.two { right: 50%; }
 
 
-
-
-
-
 /*-------- SECTION B --------*/
 
-#section-b {
-    background-color: #484848;
-    height: 100vh;
+@media only screen and (min-width: 991px) {
+    #section-b {
+        height: 115vh;
+        background-color: #484848;
+    }
+}
+
+#section-b h3 {
+    padding: 2em 1em;
+    font-weight: bold;
+    color: #B3A369;
+}
+
+.tile-container {
+    align-content: center;
+}
+
+.project-card {
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+}
+
+.project-description {
+    padding: 1em 1em;
+    line-height: 2;
+}
+
+.project-card:nth-child(even) img {
+    order: 2;
+}
+
+@media(max-width:600px) {
+    .project-card {
+        display: block;
+    }
+    .graph-label {
+        font-size: small;
+    }
+    #section-b {
+        height: 120vh;
+    }
+}
+
+@media(max-width: 990px) {
+    .project-card {
+        display: block;
+    }
+    #section-b {
+        height: 170vh;
+    }
 }
 
 /*-------- ANIMATIONS --------*/
