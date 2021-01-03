@@ -18,5 +18,8 @@
     <orderEntry type="library" name="particleground" level="project" />
     <orderEntry type="library" name="a076d05399" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
+    <orderEntry type="library" name="ScrollMagic" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
   </component>
 </module>
