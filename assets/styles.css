@@ -4,9 +4,8 @@ body {
     width: 100%;
     height: 100%;
     background: #484848;
-    /*background: white;*/
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: white;
     line-height: 1.3;
     -webkit-font-smoothing: antialiased;
     align-items: center;
@@ -19,6 +18,10 @@ body {
     padding: 0 20px;
     width: 100%;
     text-align: center;
+}
+
+p {
+    color: black;
 }
 
 h1 {
@@ -41,7 +44,7 @@ h5 {
     font-size: 28px;
     padding-top: 1em;
     animation: ease-in;
-    /*color: black;*/
+    color: #ffffff;
 }
 
 .hideme {
@@ -240,6 +243,15 @@ h5 {
     -moz-transition: all 0.3s ease-in;
 }
 
+.thread {
+    color: #B3A369;
+}
+
+.thread:hover {
+    text-decoration: none;
+    color: #B3A369;
+}
+
 /*.link-wrapper {*/
 /*    text-align: center;*/
 /*}*/
@@ -254,6 +266,104 @@ h5 {
     float: right;
 }
 
+
+
+
+#skills {
+    margin: 2em auto 0 auto;
+    position: relative;
+    width: 98%;
+}
+
+#apps {
+    float: left;
+    text-align: right;
+    width: 25%;
+}
+
+#apps p {
+    padding: 55px 2em;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+    font-weight: bold;
+}
+
+#scale {
+    padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+}
+
+#scale p.one { left: 24%; }
+#scale p.two { left: 49%; }
+#scale p.three { left: 74%; }
+#scale p.four { left: 99%; }
+
+.grid {
+    border-left: 1px dotted #484848;
+    border-bottom: 1px dotted #484848;
+    float: left;
+    padding: 10px 0;
+    position: relative;
+    width: 60%;
+}
+
+.bar {
+    float: left;
+    height: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.bar .inner {
+    background-color: #B3A369;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.bar.pct-90 .inner {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: grow-90;
+    right: 10%;
+}
+
+.bar.pct-75 .inner {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: grow-75;
+    right: 25%;
+}
+
+.bar.pct-50 .inner {
+    -webkit-animation-duration: 5s;
+    -webkit-animation-name: grow-50;
+    right: 50%;
+}
+
+.v-divider {
+    border-right: 1px dotted #f0c89d;
+    position: absolute;
+    left: 0;
+    right: 25%;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.v-divider.one { right: 75%; }
+.v-divider.two { right: 50%; }
+
+
+
+
+
+
 /*-------- SECTION B --------*/
 
 #section-b {
@@ -261,7 +371,7 @@ h5 {
     height: 100vh;
 }
 
-/*-------- NOT IN USE --------*/
+/*-------- ANIMATIONS --------*/
 
 @keyframes fadeInUp {
     from {
