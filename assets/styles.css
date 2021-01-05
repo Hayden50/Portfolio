@@ -253,7 +253,10 @@ h6 {
         background-color: green;
     }
     #section-b {
-        height: 1200px;
+        height: 1000px;
+    }
+    #section-c {
+        height: 150px;
     }
     .container .project-card {
         display: block;
