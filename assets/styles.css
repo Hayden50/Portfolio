@@ -57,27 +57,48 @@ h5 {
     }
 }
 
-/*-------- SECTION 0 --------*/
-
-#particles {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+@media only screen and (min-width: 2561px) {
+    #section-a {
+        height: 1500px;
+        background-color: maroon;
+    }
+    #section-b {
+        height: 1200px;
+        background-color: #484848;
+    }
 }
 
-#intro {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    padding: 0 20px;
-    width: 100%;
-    text-align: center;
+@media only screen and (max-width: 2560px) {
+    #section-a {
+        height: 1500px;
+        background-color: purple;
+    }
+    #section-b {
+        height: 1200px;
+        background-color: #484848;
+    }
 }
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@media only screen and (max-width: 1999px) {
+    #section-a {
+        height: 1500px;
+        background-color: white;
+    }
+    #section-b {
+        height: 1200px;
+        background-color: #484848;
+    }
+}
+
+@media only screen and (max-width: 1192px) {
+    #section-a {
+        height: 1500px;
+        background-color: orange;
+    }
+    #section-b {
+        height: 1050px;
+        background-color: #484848;
+    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -91,11 +112,14 @@ h5 {
         font-size: 24px;
     }
     #section-a {
-        height: 250vh;
-        background-color: white;
+        height: 2400px;
+        background-color: yellow;
     }
     #section-b {
-        height: 150vh;
+        height: 1600px;
+    }
+    .container .project-card {
+        display: block;
     }
 }
 
@@ -113,11 +137,14 @@ h5 {
         font-size: 18px;
     }
     #section-a {
-        height: 250vh;
-        background-color: white;
+        height: 2300px;
+        background-color: red;
     }
     #section-b {
-        height: 150vh;
+        height: 1300px;
+    }
+    .container .project-card {
+        display: block;
     }
 }
 
@@ -144,11 +171,20 @@ h5 {
         font-size: 16px;
     }
     #section-a {
-        height: 250vh;
-        background-color: white;
+        height: 2300px;
+        background-color: green;
     }
     #section-b {
-        height: 150vh;
+        height: 1200px;
+    }
+    .container .project-card {
+        display: block;
+    }
+    .graph-label {
+        font-size: small;
+    }
+    .project-description {
+        font-size: small;
     }
 }
 
@@ -163,22 +199,44 @@ h5 {
         font-size: 22px;
     }
     #section-a {
-        height: 250vh;
+        height: 2300px;
         background-color: white;
     }
     #section-b {
         height: 150vh;
     }
+    .project-card {
+        display: block;
+    }
+    .graph-label {
+        font-size: small;
+    }
+}
+
+/*-------- SECTION 0 --------*/
+
+#particles {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*-------- SECTION A --------*/
-
-@media only screen and (min-width: 991px) {
-    #section-a {
-        background-color: white;
-        height: 150vh;
-    }
-}
 
 .card {
     padding-top: 1em;
@@ -371,13 +429,6 @@ h5 {
 
 /*-------- SECTION B --------*/
 
-@media only screen and (min-width: 991px) {
-    #section-b {
-        height: 115vh;
-        background-color: #484848;
-    }
-}
-
 #section-b h3 {
     padding: 2em 1em;
     font-weight: bold;
@@ -400,33 +451,14 @@ h5 {
 }
 
 .project-description {
-    padding: 1em 1em;
-    line-height: 2;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.75;
 }
 
 .project-card:nth-child(even) img {
     order: 2;
-}
-
-@media(max-width:600px) {
-    .project-card {
-        display: block;
-    }
-    .graph-label {
-        font-size: small;
-    }
-    #section-b {
-        height: 120vh;
-    }
-}
-
-@media(max-width: 990px) {
-    .project-card {
-        display: block;
-    }
-    #section-b {
-        height: 170vh;
-    }
 }
 
 /*-------- ANIMATIONS --------*/
