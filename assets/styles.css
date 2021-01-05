@@ -66,6 +66,13 @@ h5 {
         height: 1200px;
         background-color: #484848;
     }
+    .bar {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #apps p {
+        padding: 55px 2em;
+    }
 }
 
 @media only screen and (max-width: 2560px) {
@@ -76,6 +83,13 @@ h5 {
     #section-b {
         height: 1200px;
         background-color: #484848;
+    }
+    .bar {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #apps p {
+        padding: 55px 2em;
     }
 }
 
@@ -88,6 +102,13 @@ h5 {
         height: 1200px;
         background-color: #484848;
     }
+    .bar {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #apps p {
+        padding: 55px 2em;
+    }
 }
 
 @media only screen and (max-width: 1192px) {
@@ -98,6 +119,13 @@ h5 {
     #section-b {
         height: 1050px;
         background-color: #484848;
+    }
+    .bar {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #apps p {
+        padding: 55px 2em;
     }
 }
 
@@ -121,6 +149,13 @@ h5 {
     .container .project-card {
         display: block;
     }
+    .bar {
+        height: 90px;
+        margin-bottom: 28px;
+    }
+    #apps p {
+        padding: 50px 2em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,7 +172,7 @@ h5 {
         font-size: 18px;
     }
     #section-a {
-        height: 2300px;
+        height: 2250px;
         background-color: red;
     }
     #section-b {
@@ -146,6 +181,13 @@ h5 {
     .container .project-card {
         display: block;
     }
+    .bar {
+        height: 70px;
+        margin-bottom: 25px;
+    }
+    #apps p {
+        padding: 38px 2em;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -153,7 +195,7 @@ h5 {
         padding: 0 10px;
     }
     h1 {
-        font-size: 45px;
+        font-size: 39px;
     }
     h1::after {
         height: 6px;
@@ -171,7 +213,7 @@ h5 {
         font-size: 16px;
     }
     #section-a {
-        height: 2300px;
+        height: 2150px;
         background-color: green;
     }
     #section-b {
@@ -186,6 +228,13 @@ h5 {
     .project-description {
         font-size: small;
     }
+    .bar {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    #apps p {
+        padding: 32px 2em;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -199,17 +248,24 @@ h5 {
         font-size: 22px;
     }
     #section-a {
-        height: 2300px;
+        height: 2150px;
         background-color: white;
     }
     #section-b {
-        height: 150vh;
+        height: 1200px;
     }
     .project-card {
         display: block;
     }
     .graph-label {
         font-size: small;
+    }
+    .bar {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    #apps p {
+        padding: 32px 2em;
     }
 }
 
@@ -349,7 +405,6 @@ h5 {
 }
 
 #apps p {
-    padding: 55px 2em;
     position: relative;
     text-align: right;
     z-index: 2;
@@ -380,8 +435,6 @@ h5 {
 
 .bar {
     float: left;
-    height: 100px;
-    margin-bottom: 30px;
     position: relative;
     width: 100%;
     z-index: 1;
