@@ -47,6 +47,15 @@ h5 {
     color: #ffffff;
 }
 
+h6 {
+    text-align: center;
+    color: #B3A369;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 34px;
+}
+
 .hideme {
     opacity: 0;
 }
@@ -60,7 +69,7 @@ h5 {
 @media only screen and (min-width: 2561px) {
     #section-a {
         height: 1500px;
-        background-color: maroon;
+        background-color: white;
     }
     #section-b {
         height: 1200px;
@@ -73,9 +82,33 @@ h5 {
     #apps p {
         padding: 55px 2em;
     }
+    .contact-icons {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width: 2560px) {
+    #section-a {
+        height: 1500px;
+        background-color: white;
+    }
+    #section-b {
+        height: 1200px;
+        background-color: #484848;
+    }
+    .bar {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    #apps p {
+        padding: 55px 2em;
+    }
+    .contact-icons {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 1999px) {
     #section-a {
         height: 1500px;
         background-color: purple;
@@ -91,23 +124,8 @@ h5 {
     #apps p {
         padding: 55px 2em;
     }
-}
-
-@media only screen and (max-width: 1999px) {
-    #section-a {
-        height: 1500px;
-        background-color: white;
-    }
-    #section-b {
-        height: 1200px;
-        background-color: #484848;
-    }
-    .bar {
-        height: 100px;
+    .contact-icons {
         margin-bottom: 30px;
-    }
-    #apps p {
-        padding: 55px 2em;
     }
 }
 
@@ -127,6 +145,9 @@ h5 {
     #apps p {
         padding: 55px 2em;
     }
+    .contact-icons {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 990px) {
@@ -138,6 +159,9 @@ h5 {
     }
     h5 {
         font-size: 24px;
+    }
+    h6 {
+        font-size: 28px;
     }
     #section-a {
         height: 2400px;
@@ -156,6 +180,9 @@ h5 {
     #apps p {
         padding: 50px 2em;
     }
+    .contact-icons {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,6 +197,9 @@ h5 {
     }
     h5 {
         font-size: 18px;
+    }
+    h6 {
+        font-size: 23px;
     }
     #section-a {
         height: 2250px;
@@ -188,6 +218,9 @@ h5 {
     #apps p {
         padding: 38px 2em;
     }
+    .contact-icons {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -204,10 +237,13 @@ h5 {
         font-size: 18px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
     h5 {
         font-size: 15px;
+    }
+    h6 {
+        font-size: 20px;
     }
     .btn {
         font-size: 16px;
@@ -223,7 +259,7 @@ h5 {
         display: block;
     }
     .graph-label {
-        font-size: small;
+        font-size: x-small;
     }
     .project-description {
         font-size: small;
@@ -233,7 +269,10 @@ h5 {
         margin-bottom: 20px;
     }
     #apps p {
-        padding: 32px 2em;
+        padding: 34px 2em;
+    }
+    .contact-icons {
+        margin-bottom: 20px;
     }
 }
 
@@ -246,6 +285,9 @@ h5 {
     }
     h2 {
         font-size: 22px;
+    }
+    h6 {
+        font-size: 12px;
     }
     #section-a {
         height: 2150px;
@@ -266,6 +308,9 @@ h5 {
     }
     #apps p {
         padding: 32px 2em;
+    }
+    .contact-icons {
+        margin-bottom: 20px;
     }
 }
 
@@ -378,14 +423,6 @@ h5 {
     color: #B3A369;
 }
 
-/*.link-wrapper {*/
-/*    text-align: center;*/
-/*}*/
-
-/*.links {*/
-/*    color: #B3A369;*/
-/*}*/
-
 .picture {
     max-height: 300px;
     padding: 1em;
@@ -467,7 +504,7 @@ h5 {
 }
 
 .v-divider {
-    border-right: 1px dotted #f0c89d;
+    border-right: 1px dotted #484848;
     position: absolute;
     left: 0;
     right: 25%;
@@ -514,7 +551,49 @@ h5 {
     order: 2;
 }
 
+/*-------- SECTION C --------*/
+
+#section-c {
+    background-color: #ffffff;
+}
+
+#section-c h2 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.contact-icons {
+    color: #B3A369;
+    display: flex;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.icons {
+    color: #B3A369;
+}
+
+.icons:hover {
+    animation: bounce .5s ease-in-out;
+    color: #B3A369;
+}
+
+.contact-icons.space-around {
+    justify-content: space-around;
+}
+
 /*-------- ANIMATIONS --------*/
+
+@keyframes bounce {
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+}
 
 @keyframes fadeInUp {
     from {
@@ -577,13 +656,4 @@ h5 {
     animation-play-state: running;
 }
 
-/*@keyframes bounce {*/
-/*    0%,*/
-/*    60%,*/
-/*    100% {*/
-/*        transform: translateY(0);*/
-/*    }*/
-/*    40% {*/
-/*        transform: translateY(-8px);*/
-/*    }*/
-/*}*/
+
