@@ -111,7 +111,7 @@ h6 {
 @media only screen and (max-width: 1999px) {
     #section-a {
         height: 1500px;
-        background-color: purple;
+        background-color: white;
     }
     #section-b {
         height: 1200px;
@@ -132,7 +132,7 @@ h6 {
 @media only screen and (max-width: 1192px) {
     #section-a {
         height: 1500px;
-        background-color: orange;
+        background-color: white;
     }
     #section-b {
         height: 1050px;
@@ -165,7 +165,7 @@ h6 {
     }
     #section-a {
         height: 2400px;
-        background-color: yellow;
+        background-color: white;
     }
     #section-b {
         height: 1600px;
@@ -203,7 +203,7 @@ h6 {
     }
     #section-a {
         height: 2250px;
-        background-color: red;
+        background-color: white;
     }
     #section-b {
         height: 1300px;
@@ -223,6 +223,7 @@ h6 {
     }
 }
 
+/*      IPHONE SECTION      */
 @media only screen and (max-width: 568px) {
     #intro {
         padding: 0 10px;
@@ -250,7 +251,7 @@ h6 {
     }
     #section-a {
         height: 2150px;
-        background-color: green;
+        background-color: white;
     }
     #section-b {
         height: 1000px;
