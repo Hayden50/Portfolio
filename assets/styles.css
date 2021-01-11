@@ -72,7 +72,7 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1200px;
+        height: 1475px;
         background-color: #484848;
     }
     .bar {
@@ -93,7 +93,7 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1200px;
+        height: 1475px;
         background-color: #484848;
     }
     .bar {
@@ -114,7 +114,7 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1200px;
+        height: 1475px;
         background-color: #484848;
     }
     .bar {
@@ -135,7 +135,7 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1050px;
+        height: 1250px;
         background-color: #484848;
     }
     .bar {
@@ -168,7 +168,8 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1600px;
+        height: 2150px;
+        background-color: #484848;
     }
     .container .project-card {
         display: block;
@@ -206,7 +207,8 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1300px;
+        height: 1800px;
+        background-color: #484848;
     }
     .container .project-card {
         display: block;
@@ -254,7 +256,8 @@ h6 {
         background-color: white;
     }
     #section-b {
-        height: 1000px;
+        height: 1650px;
+        background-color: #484848;
     }
     #section-c {
         height: 150px;
@@ -523,6 +526,10 @@ h6 {
 
 /*-------- SECTION B --------*/
 
+#section-b h2 {
+    padding-bottom: 0.5em;
+}
+
 #section-b h3 {
     padding: 2em 1em;
     font-weight: bold;
@@ -551,8 +558,8 @@ h6 {
     line-height: 1.75;
 }
 
-.project-card:nth-child(even) img {
-    order: 2;
+.project-card:nth-child(odd) img {
+    order: 1;
 }
 
 /*-------- SECTION C --------*/
